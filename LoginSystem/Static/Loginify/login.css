@@ -1,109 +1,107 @@
 /* Style the body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2; /* Light gray background for contrast */
+  margin: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Align container to the left */
+  align-items: flex-start; /* Align container to the top */
 }
 
 /* Style the login container */
 .login-container {
-    width: 40%;
-    height: 100vh;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px 0 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 0;
+  width: 40%; /* Container takes 40% of the width */
+  max-width: 600px; /* Prevent it from becoming too large on wide screens */
+  height: 120vh; /* Full viewport height */
+  background-color: white; /* White background for the form */
+  padding: 20px; /* Space inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px 0 0 10px; /* Round top-left and bottom-left corners */
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center elements vertically */
+  position: relative; /* Allow it to respect normal flow (remove fixed) */
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    border-radius: 5px;
+  width: 100%; /* Take up the full width of the container */
+  padding: 15px; /* Padding inside the input */
+  margin: 5px 0 22px 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Add a border for better contrast */
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
 }
 
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+  background-color: #ddd; /* Slightly darker background on focus */
+  outline: none; /* Remove the default outline */
 }
 
 /* Overwrite default styles of hr */
 hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+  border: 1px solid #f1f1f1; /* Subtle horizontal line */
+  margin-bottom: 25px; /* Space below the line */
 }
 
 /* Set a style for the submit button */
 button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 5px;
+  background-color: #4CAF50; /* Green button */
+  color: white; /* White text */
+  padding: 14px 20px; /* Space inside the button */
+  margin: 8px 0; /* Space outside the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer */
+  width: 100%; /* Full width button */
+  opacity: 0.9; /* Slight transparency */
+  border-radius: 5px; /* Rounded corners */
 }
 
 button[type=submit]:hover {
-    opacity: 1;
+  opacity: 1; /* Full opacity on hover */
 }
 
 /* Add a blue text color to links */
 a {
-    color: dodgerblue;
+  color: dodgerblue; /* Blue links */
 }
 
 /* Set a grey background color and center the text of the "cancel" button */
 .cancelbtn {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 5px;
+  background-color: #f44336; /* Red button for cancel */
+  color: white; /* White text */
+  padding: 14px 20px; /* Space inside the button */
+  margin: 8px 0; /* Space outside the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor */
+  width: 100%; /* Full width button */
+  opacity: 0.9; /* Slight transparency */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .cancelbtn:hover {
-    opacity: 1;
+  opacity: 1; /* Full opacity on hover */
 }
 
 /* Add padding to container elements */
 .container label {
-    margin-bottom: 10px;
-    display: block;
+  margin-bottom: 10px; /* Space below labels */
+  display: block; /* Block-level elements for proper spacing */
 }
 
 /* Add some padding to the form */
 form {
-    padding: 20px;
+  padding: 20px; /* Space inside the form */
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
-     display: block;
-     float: none;
+      display: block; /* Stack password span */
+      float: none;
   }
   .cancelbtn {
-     width: 100%;
+      width: 100%; /* Full width for smaller screens */
   }
 }
