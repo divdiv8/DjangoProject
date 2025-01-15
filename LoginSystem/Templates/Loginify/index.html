@@ -14,24 +14,18 @@
 <body>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Home Page</h1>
   <p class="w3-xlarge">Welcome to Loginify</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Login</button>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.location.href='{% url 'login:userlogin' %}'">Login</button>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.location.href='{% url 'login:signup' %}'">Signup</button>
+
 </header>
 
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Built by <a href="https://www.linkedin.com/in/divyak88" target="_blank">Divya Sharvani Kandukuri</a></p>
+ <p>Built by <a href="https://www.linkedin.com/in" target="_blank">Divya</a></p>
 </footer>
 
 <script>

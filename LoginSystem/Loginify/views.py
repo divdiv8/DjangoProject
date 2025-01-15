@@ -8,3 +8,9 @@ def hello_view(request):
 
 def home_page_view(request):
     return render(request, 'Loginify/index.html')
+
+def user_login_view(request):
+    return render(request, 'Loginify/login.html')
+
+def signup_view(request):
+    return render(request, 'Loginify/signup.html')

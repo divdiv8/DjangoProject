@@ -19,5 +19,5 @@ from django.urls import path, include
 #URLs at project level
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', include('Loginify.urls') )
+    path('login/', include('Loginify.urls', namespace='login' ))
 ]
