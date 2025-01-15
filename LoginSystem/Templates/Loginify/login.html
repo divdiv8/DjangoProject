@@ -5,13 +5,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{% static 'Loginify/login.css' %}">
-        <title>Homepage</title>
+        <title>Login</title>
     </head>
     <body>
 
+    <div class="login-container">
         <h2>Login Form</h2>
         
-        <form action="/action_page.php" method="post">
+        <form method="post">
+            {% csrf_token %}
           <div class="imgcontainer">
             <img src="{% static 'Loginify/Images/img_avatar2.png' %}" alt="Avatar" class="avatar">
           </div>
@@ -34,6 +36,7 @@
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
         </form>
+    </div>
         
-        </body>
+    </body>
 </html>
